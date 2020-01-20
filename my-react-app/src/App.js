@@ -34,7 +34,7 @@ export default class App extends React.Component{
   render(){
     return( 
       <div className = "App">
-        <h1>Hello World</h1>
+        <h1>UserCard</h1>
         <User
         image = {this.state.users.avatar_url}
         name = {this.state.users.name}
@@ -44,7 +44,7 @@ export default class App extends React.Component{
         followers = {this.state.users.followers}
         following = {this.state.users.following}/>
 
-        <section className = 'FollowerCard'>
+        
         <h1>Followers</h1>
           {this.state.followers.map(follower =>{
             return(
@@ -55,7 +55,7 @@ export default class App extends React.Component{
               login = {follower.login}/>
             )
           })}
-        </section>
+        
 
       </div>
     )
